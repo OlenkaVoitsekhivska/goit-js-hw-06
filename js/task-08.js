@@ -19,7 +19,7 @@ form.addEventListener("submit", (event)=> {
     //    console.log(formData);
         const formDataObj = {
             email: event.currentTarget.elements.email.value,
-            password: event.currentTarget.elements.password.value
+            password: event.currentTarget.elements.password.value,
    }
         console.log(formDataObj);
      

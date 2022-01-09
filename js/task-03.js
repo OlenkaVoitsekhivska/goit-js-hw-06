@@ -14,12 +14,12 @@ const images = [
 ];
 
 
-const makeGallery = images.map(({ url, alt }) => {
+const makeGalleryMarkup = images.map(({ url, alt }) => {
    return `<li><img src="${url}" alt="${alt}" width="480"></li>`
 }).join("");
 
 const imgList = document.querySelector(".gallery");
-imgList.insertAdjacentHTML("beforeend", makeGallery);
+imgList.insertAdjacentHTML("beforeend", makeGalleryMarkup);
 imgList.style.display = "flex";
 imgList.style.justifyContent = "space-evenly";
 imgList.style.alignItems = "center";
