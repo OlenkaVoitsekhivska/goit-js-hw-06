@@ -19,13 +19,9 @@ const makeGalleryMarkup = images.map(({ url, alt }) => {
 }).join("");
 
 const imgList = document.querySelector(".gallery");
+imgList.classList.add("positioning");
 imgList.insertAdjacentHTML("beforeend", makeGalleryMarkup);
-imgList.style.display = "flex";
-imgList.style.justifyContent = "space-evenly";
-imgList.style.alignItems = "center";
-imgList.style.flexWrap = "wrap";
-imgList.style.listStyle = "none";
 
 
-console.log(imgList);
+
 

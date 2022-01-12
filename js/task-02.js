@@ -18,12 +18,12 @@ const ingredients = [
 //   console.log(listEl);
 // });
 
-ingredients.map(ingredient => {
+const ingredientItemList = ingredients.map(ingredient => {
   const listEl = document.createElement("li");
   listEl.classList.add("item");
   listEl.textContent = ingredient;
-  const ingredientsList = document.querySelector("#ingredients");
-  ingredientsList.append(listEl);
-  console.log(listEl);
+  return listEl;
 });
 
+const ingredientsList = document.querySelector("#ingredients");
+ingredientsList.append(...ingredientItemList);
