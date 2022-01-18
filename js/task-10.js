@@ -25,19 +25,19 @@ destroyBtn.addEventListener('click', () => {
 
 const createBoxes = (amount) => {
   let counter = 1;
-  let initialWidth = 30;
-  let initialHeight = 30;
+  let initialLength = 30;
+  
   while (counter <= amount) {
     let box = document.createElement("div");
     boxContainer.append(box);
-    box.style.width = `${initialWidth}px`;
-    box.style.height = `${initialHeight}px`;
+    box.style.width = `${initialLength}px`;
+    box.style.height = `${initialLength}px`;
     box.style.margin = "15px";
     box.style.background = getRandomHexColor();
     
     counter += 1;
-    initialWidth += 10;
-    initialHeight += 10;
+    initialLength += 10;
+    
    
   }
 
